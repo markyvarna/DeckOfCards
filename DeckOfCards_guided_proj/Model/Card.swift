@@ -11,20 +11,17 @@ import Foundation
 //conform to decodable protocol
 struct DeckDictionary: Decodable {
     
-    //MARK: - Properties
+    //Deck Properties
     //the name of the constant in Swift 4 is automatically associated with the key name of the json dict
     let cards: [Card]
     
-    //Because of swift 4 we dont have to use this because the cards constant name matches the json
-//    private enum CodingKeys: String, CodingKey {
-//        case cards = "cards"
-//    }
-    
-    struct Card: Decodable {
-        //define what the card is made up of
-        let value: String
-        let suit: String
-        let image: String
-        
-    }
 }
+
+struct Card: Decodable {
+    //Card Properties
+    let value: String
+    let suit: String
+    let image: String
+    
+}
+
