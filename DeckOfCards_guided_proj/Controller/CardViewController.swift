@@ -19,7 +19,7 @@ class CardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        view.addVerticalGradientLayer(topColor: .green, bottomColor: .gray)
     }
     
     //MARK: - Actions
@@ -37,6 +37,14 @@ class CardViewController: UIViewController {
                 guard let card = cards?.first else {return}
                 self.suitLabel.text = card.suit
                 self.valueLabel.text = card.value
+                
+                CardController.shared.fetchCardImage(card: card, completion: { (image) in
+                    DispatchQueue.main.async {
+                        self.cardImageView.image = image
+                    }
+                    
+                })
+                
             }
             
         }

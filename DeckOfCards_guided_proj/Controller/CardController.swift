@@ -6,7 +6,7 @@
 //  Copyright © 2018 Markus Varner. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 //How to build URL
 // 1) Components are /
@@ -68,6 +68,34 @@ class CardController {
                 completion([]); return
             }
             }.resume()
+        
+    }
+    
+    //MARK: - Fetch Image Func
+    func fetchCardImage(card: Card, completion: @escaping (UIImage?) -> Void) {
+        
+        guard let url = URL(string: card.image) else {return}
+        
+        //verify is on main thread
+        print("Are you on the Main Thread?? \(Thread.isMainThread)")
+        
+        URLSession.shared.dataTask(with: url) { (data, _, error) in
+            
+            print("🐶\(Thread.isMainThread)")
+            
+            if let error = error {
+                print("Error with fetching image data task \(error) \(error.localizedDescription)")
+                completion(nil); return
+            }
+            
+            //unwrap optionals
+            guard let data = data else {completion(nil); return}
+            guard let image = UIImage(data: data) else {completion(nil); return}
+            
+            //if it does work
+            completion(image)
+            
+        }.resume()
         
     }
     
