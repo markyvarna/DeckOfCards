@@ -12,6 +12,7 @@
 		455A8BD2213D949A000B4496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455A8BD0213D949A000B4496 /* Main.storyboard */; };
 		455A8BD4213D949B000B4496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 455A8BD3213D949B000B4496 /* Assets.xcassets */; };
 		455A8BD7213D949B000B4496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455A8BD5213D949B000B4496 /* LaunchScreen.storyboard */; };
+		455A8BE1213D9BEA000B4496 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455A8BE0213D9BEA000B4496 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		455A8BD3213D949B000B4496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		455A8BD6213D949B000B4496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		455A8BD8213D949B000B4496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		455A8BE0213D9BEA000B4496 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				455A8BDF213D9A74000B4496 /* Ciontroller */,
 				455A8BDE213D9A4E000B4496 /* Resources */,
+				455A8BE2213DA212000B4496 /* Model */,
 			);
 			path = DeckOfCards_guided_proj;
 			sourceTree = "<group>";
@@ -78,6 +81,14 @@
 				455A8BCE213D949A000B4496 /* ViewController.swift */,
 			);
 			path = Ciontroller;
+			sourceTree = "<group>";
+		};
+		455A8BE2213DA212000B4496 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				455A8BE0213D9BEA000B4496 /* Card.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +164,7 @@
 			files = (
 				455A8BCF213D949A000B4496 /* ViewController.swift in Sources */,
 				455A8BCD213D949A000B4496 /* AppDelegate.swift in Sources */,
+				455A8BE1213D9BEA000B4496 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
