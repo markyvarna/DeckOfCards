@@ -54,14 +54,30 @@
 		455A8BCB213D949A000B4496 /* DeckOfCards_guided_proj */ = {
 			isa = PBXGroup;
 			children = (
+				455A8BDF213D9A74000B4496 /* Ciontroller */,
+				455A8BDE213D9A4E000B4496 /* Resources */,
+			);
+			path = DeckOfCards_guided_proj;
+			sourceTree = "<group>";
+		};
+		455A8BDE213D9A4E000B4496 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				455A8BCC213D949A000B4496 /* AppDelegate.swift */,
-				455A8BCE213D949A000B4496 /* ViewController.swift */,
 				455A8BD0213D949A000B4496 /* Main.storyboard */,
 				455A8BD3213D949B000B4496 /* Assets.xcassets */,
 				455A8BD5213D949B000B4496 /* LaunchScreen.storyboard */,
 				455A8BD8213D949B000B4496 /* Info.plist */,
 			);
-			path = DeckOfCards_guided_proj;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		455A8BDF213D9A74000B4496 /* Ciontroller */ = {
+			isa = PBXGroup;
+			children = (
+				455A8BCE213D949A000B4496 /* ViewController.swift */,
+			);
+			path = Ciontroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
